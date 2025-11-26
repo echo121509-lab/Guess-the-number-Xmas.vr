@@ -8,11 +8,14 @@ st.set_page_config(page_title="Santa Guess! 🎅", page_icon="🎄", layout="cen
 
 # 초기화
 if 'secret' not in st.session_state:
-st.session_state.secret = random.randint(1, 100)
+    st.session_state.secret = random.randint(1, 100)
+
 if 'tries' not in st.session_state:
-st.session_state.tries = 0
+    st.session_state.tries = 0
+
 if 'history' not in st.session_state:
-st.session_state.history = []
+    st.session_state.history = []
+
 
 
 st.title("🎅 Santa Guess — 메리 크리스마스 숫자맞추기 게임 🎄")
