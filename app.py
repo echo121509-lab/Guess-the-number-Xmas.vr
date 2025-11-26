@@ -65,4 +65,9 @@ low = max(1, st.session_state.secret - random.randint(1, 15))
 high = min(100, st.session_state.secret + random.randint(1, 15))
 st.info(f"힌트: 숫자는 {low}와 {high} 사이에 있어요. 🎁")
 st.write("\n---\n개발자: 귀여운 산타 앱 제공 🎅")
+
+
+# 푸터: 실패 시 재시작 버튼
+st.write("---")
+if st.button("다시 시작 (초기화)"):
 st.experimental_rerun()
